@@ -75,7 +75,7 @@ classifiers that are based on the popular Bayes’ probability theorem, are know
 performing models, especially in the fields of document classification and disease prediction.
 Then we will build a model using logistic-regression algorithm since it performs very well when we have large
 amount of text data.
-Then our last model will be a hybrid model using Naïve-Bayes log-count ratio as an additional feature as an
+Then our last model will be a hybrid model using Naïve-Bayes log-count ratio (additional weightage) as an
 input to logistic regression, this is known as NB-LR baseline and performs equally well like any other state of
 the art model.
 Naive-Bayes. It performs very well short length of text data. We will apply this algorithm and check how
@@ -119,13 +119,14 @@ y = Multi label categories in the training data
 x=Training data in matrix form.
 
 Model selection
+
 We have built three model and tested the accuracy of all the model now we will analyse which model we
 should select for the deployment.
 Comparison on the basis of Accuracy:
-Accuracy of all the models are above 90% hence all the models. Acceptable in deployment but LR and NB-LR
+Accuracy of all the models are above 90% hence all the models are acceptable in deployment but LR and NB-LR
 has an edge Over NB.
-Now we will analyse into the classification reports of all the models:
-Comparing all the classification reports of all the models we can say that:
+Now we will analyse the classification reports of all the models:
+Comparing all the classification reports of all the models, we can say that:
 In class toxic LR is performing well than NB-LR and NB.
 In class severe_toxic LR is performing better than all
 In class obscene LR outperforms all other models
